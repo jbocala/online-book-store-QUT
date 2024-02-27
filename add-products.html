@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smythe&display=swap"
+        rel="stylesheet">
+    <title>Book Store</title>
+</head>
+
+<body>
+    <header>
+        <h5 class="slogan">
+            Read For Your Life
+        </h5>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Books</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Business</a></li>
+                                <li><a class="dropdown-item" href="#">Personal Development</a></li>
+                                <li><a class="dropdown-item" href="#">History</a></li>
+                                <li><a class="dropdown-item" href="#">Literature & Fiction</a></li>
+                                <li><a class="dropdown-item" href="#">Health & Welness</a></li>
+                                <li><a class="dropdown-item" href="#">Teen & Young Adult</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">All Categories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Staff login</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for books"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <h2>Staff only - add a product</h2>
+            <p>To add a new book product to the website, please fill out the form provided below. 
+                Your submission will undergo a review by your manager. If you encounter any issues or 
+                require assistance, feel free to reach out to the Web Development team for support.
+            </p>
+
+            <div class="form-container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="title">Product Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="title" name="book-title" placeholder="Title of the book..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="price">Price</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="price" placeholder="$ Price of the book..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="category">Categories</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="category" name="category">
+                                <option value="business">Business</option>
+                                <option value="personal-development">Personal Development</option>
+                                <option value="history">History</option>
+                                <option value="literature-fiction">Literature & Fiction</option>
+                                <option value="health-wellness">Health & Wellness</option>
+                                <option value="young-adult">Teen & Young Adult</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Description</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="description" placeholder="Write something about the book.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <div class="mb-3">
+                                <label for="formFile" class="form">Attach image</label>
+                              </div>
+                        </div>
+                        <div class="col-75">
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="space-between">&copy; 2024 Book Haven | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a
+                href="#">Investors</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>

@@ -1,0 +1,368 @@
+* {
+    font-family: "Roboto", sans-serif;
+    
+
+}
+
+
+.slogan {
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    background-color: #c1e1c1;
+    color: #ffff;
+    
+}
+
+.container {
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+}
+
+.navbar {
+    height: 8em;
+    
+    
+}
+
+.d-flex {
+    width: 50%;
+}
+
+.me-2 {
+    width: 85%;
+}
+
+.btn-outline-success {
+    margin-right: 2em;
+    width: 12%;
+    
+}
+
+.fa-cart-shopping {
+    margin-right: 1em;
+    color: grey;
+
+}
+
+.carousel-inner {
+    max-height: 550px;
+    margin-bottom: 2em;
+}
+
+
+
+.discounted-books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.card-img-top {
+    max-width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card-body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+   
+}
+
+.book-title {
+    font-style: bold;
+}
+
+.prices {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.discounted-price {
+    text-decoration: line-through;
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 2.50em;
+}
+
+/* product page styles */
+
+.featured-product-image {
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+.featured-product-description {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.purchase-controls {
+    width: 50%;
+    margin-bottom: 3em;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.gap-between {
+    gap: 1.5em;
+}
+
+.btn-secondary {
+    width: 100%;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.endorsements
+h6 {
+    margin-bottom: 2em;
+    gap: 3em;
+}
+
+.review-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Styles for individual reviews */
+  .review {
+    margin-bottom: 2em;
+  }
+
+  .review-author {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+  }
+
+  .review-quote {
+    font-style: italic;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  .review-details {
+    font-weight: 350;
+  }
+
+/* Styles for add-products form */
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 60%;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #fafafa;
+    color: #151515;
+}
+
+.modal-inner{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.modal-inner-loading{
+    text-align: center;
+}
+
+/* modal buttons */
+
+.close-modal-btn-container{
+    text-align: right;
+    margin: 9px;
+}
+
+.modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: black;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+    color: red;
+    cursor: pointer;
+}
+
+.modal-close-btn{
+    color: black;
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.modal-submit-btn{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-btn{
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.modal-btns-reverse{
+    flex-direction: row-reverse;
+}
+
+/* modal input */
+
+input{
+    margin-top: 10px; 
+    border: 1px solid #212529;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+/* modal after submit */
+
+.loading{
+    width: 100%; 
+    margin-top: 10px;
+}
+
+.modal-display-name{
+    color: fuchsia;
+}
+
+.modal-text{
+    height: 100%;
+    line-height: 1em;
+    margin-bottom: 3em;
+}
+
+
+
+
+
+

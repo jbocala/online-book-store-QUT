@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smythe&display=swap"
+        rel="stylesheet">
+    <title>Book Store</title>
+</head>
+
+<body>
+    <header>
+        <h5 class="slogan">
+            Read For Your Life
+        </h5>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Books</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Business</a></li>
+                                <li><a class="dropdown-item" href="#">Personal Development</a></li>
+                                <li><a class="dropdown-item" href="#">History</a></li>
+                                <li><a class="dropdown-item" href="#">Literature & Fiction</a></li>
+                                <li><a class="dropdown-item" href="#">Health & Welness</a></li>
+                                <li><a class="dropdown-item" href="#">Teen & Young Adult</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">All Categories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Staff login</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for books"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="images/featured-product-image.png" class="featured-product-image" alt="...">
+                <div class="review-container">
+                    <div class="review">
+                      <p class="review-author">John Doe</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="review-details">Reviewed in the United States on January 24, 2024</p>
+                      <p class="review-quote">"An engaging and thought-provoking read. The characters come to life, and the plot keeps you hooked until the very end."</p>
+                    </div>
+                
+                    <div class="review">
+                      <p class="review-author">Jane Smith</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="review-details">Reviewed in Australia on February 20, 2024</p>
+                      <p class="review-quote">"A beautifully written book with a compelling storyline. I couldn't put it down!"</p>
+                    </div>
+                
+                    <div class="review">
+                        <p class="review-author">Emma Johnson</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="review-details">Reviewed in United Kingdom on February 23, 2024</p>
+                        <p class="review-quote">"A literary masterpiece! The Geraldine's vivid prose takes you on a captivating journey through the pages. Each character is intricately woven into the narrative, leaving an indelible mark on the reader's soul. An absolute must-read for anyone who appreciates the beauty of storytelling."</p>
+                      </div>
+                
+                  </div>
+              </div>
+              
+              <div class="col featured-product-description">
+                <h1>Horse: A Novel</h1>
+                <h2>by Geraldine Brooks</h2>
+                <div class="prices">
+                    <h5 class="discounted-price">$21.70</h5>
+                    <h5>$19.50</h5>
+                </div>
+                <div class="d-flex gap-between purchase-controls">
+                    <div class="quantity-selector">
+                        <input type="number" id="inputQuantitySelector" class="form-control" aria-live="polite" data-bs-step="counter" name="quantity" title="quantity" value="0" min="0" max="10" step="1" data-bs-round="0" aria-label="Quantity selector">
+                    </div>
+                        <button type="button" class="btn btn-secondary">Add to cart</button>
+                </div>
+                <div class="product-details">
+                    <div class="endorsements">
+                        <h6>“Brooks’ chronological and cross-disciplinary leaps are thrilling.” —The New York Times Book Review</h6>
+                        <h6>“Horse isn’t just an animal story—it’s a moving narrative about race and art.” —TIME</h6>
+                        <h6>“A thrilling story about humanity in all its ugliness and beauty . . . the evocative voices create a story so powerful, 
+                            reading it feels like watching a neck-and-neck horse race, galloping to its conclusion—you just can’t look away.” —Oprah Daily</h6>
+                    </div>
+                    
+                    <p>Kentucky, 1850. An enslaved groom named Jarret and a bay foal forge a bond of understanding 
+                        that will carry the horse to record-setting victories across the South. When the nation erupts 
+                        in civil war, an itinerant young artist who has made his name on paintings of the racehorse takes up arms 
+                        for the Union. On a perilous night, he reunites with the stallion and his groom, very far from the glamor of any racetrack. 
+     
+                        New York City, 1954. Martha Jackson, a gallery owner celebrated for taking risks on edgy contemporary painters, becomes obsessed 
+                        with a nineteenth-century equestrian oil painting of mysterious provenance.
+                         
+                        Washington, DC, 2019. Jess, a Smithsonian scientist from Australia, and Theo, a Nigerian-American art historian, find themselves 
+                        unexpectedly connected through their shared interest in the horse—one studying the stallion’s bones for clues to his power and endurance, 
+                        the other uncovering the lost history of the unsung Black horsemen who were critical to his racing success.
+                         
+                        Based on the remarkable true story of the record-breaking thoroughbred Lexington, Horse is a novel of art and science, love and obsession, 
+                        and our unfinished reckoning with racism.</p>
+                </div> 
+              </div>
+            </div>
+        
+    </main>
+
+    <footer>
+        <p class="space-between">&copy; 2024 Book Haven | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a
+                href="#">Investors</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
