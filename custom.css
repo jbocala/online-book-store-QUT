@@ -81,14 +81,7 @@ main {
 
 }
 
-@media screen and (max-width: 768px){
-    .product-page-grid {
-        display: flex;
-        
-        
-       
-    }
-}
+
 
 
 
@@ -162,10 +155,9 @@ main {
     .btn-outline-success {
         width: auto;
     }
+
+    
 }
-
-
-
 
 
 
@@ -175,7 +167,7 @@ footer {
     padding: 2.50em;
 }
 
-/* product page styles */
+/* Product Page */
 
 .featured-product-image {
     width: 50%;
@@ -233,7 +225,38 @@ h6 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* Styles for individual reviews */
+  @media screen and (max-width: 768px){
+    
+    .product-page-flex {
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important; 
+        margin-left: auto; 
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .purchase-controls {
+        width: 80%;
+    }
+
+    #inputQuantitySelector {
+        width: 4em;
+    }
+
+    
+
+    .featured-product-description {
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    .featured-product-image {
+        width: auto;
+    }
+}
+
+  /* Product page - Styles for individual reviews */
   .review {
     margin-bottom: 2em;
   }
@@ -256,6 +279,14 @@ h6 {
   }
 
 /* Styles for add-products form */
+
+ .form-container {
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
 
   input[type=text], select, textarea {
     width: 100%;
@@ -284,13 +315,6 @@ h6 {
     background-color: #45a049;
   }
   
-  .form-container {
-    
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border: 1px solid red;
-  }
   
   .col-25 {
     float: left;
@@ -420,6 +444,11 @@ input{
     height: 100%;
     line-height: 1em;
     margin-bottom: 3em;
+}
+
+footer {
+    background: #171717;
+    color: #ffff;
 }
 
 
